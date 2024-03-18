@@ -15,6 +15,8 @@ public class EndPoint : MonoBehaviour
     public GameObject replay;
     public GameObject Menu;
 
+    public PlatformTouch PT;
+
 
     public GameObject EndEffect;
 
@@ -37,6 +39,17 @@ public class EndPoint : MonoBehaviour
         {
 
             for(int i = 0; i < endGame.Count; i++)
+            {
+                endGame[i].SetActive(false);
+            }
+
+            Menu.SetActive(true);
+            EndEffect.SetActive(true);
+        } 
+        
+        else if (PT.activated)
+        {
+            for (int i = 0; i < endGame.Count; i++)
             {
                 endGame[i].SetActive(false);
             }
