@@ -256,6 +256,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EndPoint
       objectReference: {fileID: 0}
+    - target: {fileID: 3013280922070070414, guid: a495c2e48b5249c408b314a4feba2400, type: 3}
+      propertyPath: m_Constraints
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6713620238236158950, guid: a495c2e48b5249c408b314a4feba2400, type: 3}
       propertyPath: Menu
       value: 
@@ -302,7 +306,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6864019757089591930, guid: a495c2e48b5249c408b314a4feba2400, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.02
+      value: -2.17
       objectReference: {fileID: 0}
     - target: {fileID: 6864019757089591930, guid: a495c2e48b5249c408b314a4feba2400, type: 3}
       propertyPath: m_LocalPosition.z
@@ -860,6 +864,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1731191751162311344, guid: 5a7645fbef350d045bbde8c52b36b1b4, type: 3}
       propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1731191751162311344, guid: 5a7645fbef350d045bbde8c52b36b1b4, type: 3}
+      propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3439847778618861920, guid: 5a7645fbef350d045bbde8c52b36b1b4, type: 3}
@@ -1110,7 +1118,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1303659617557646965, guid: 32db6be09ed444e4d85e6c7ff9827574, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.14
+      value: -2.83
       objectReference: {fileID: 0}
     - target: {fileID: 1303659617557646965, guid: 32db6be09ed444e4d85e6c7ff9827574, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1463,6 +1471,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5086537366632779661, guid: b5899a5c281306249b4c5be0f80b741e, type: 3}
+      propertyPath: m_Mass
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6846219465738942495, guid: b5899a5c281306249b4c5be0f80b741e, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1778,19 +1790,19 @@ SliderJoint2D:
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_BreakAction: 3
-  m_AutoConfigureConnectedAnchor: 0
+  m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.42, y: -1.22}
+  m_ConnectedAnchor: {x: -0.42, y: 1.03}
   m_AutoConfigureAngle: 0
   m_Angle: 270
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 10
-    m_MaximumMotorForce: 30
-  m_UseLimits: 0
+    m_MaximumMotorForce: 200
+  m_UseLimits: 1
   m_TranslationLimits:
-    m_LowerTranslation: 0
-    m_UpperTranslation: 0
+    m_LowerTranslation: -4.02
+    m_UpperTranslation: 0.25
 --- !u!4 &2066280503 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3439847778618861920, guid: 5a7645fbef350d045bbde8c52b36b1b4, type: 3}
