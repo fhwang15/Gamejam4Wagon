@@ -7,6 +7,7 @@ public class Hand : MonoBehaviour
 
     SliderJoint2D handsUp;
     JointMotor2D motor;
+    public GameObject entrance;
 
     public float handSpeed;
 
@@ -15,6 +16,7 @@ public class Hand : MonoBehaviour
     {
         handsUp = GetComponent<SliderJoint2D>();
         motor = handsUp.motor;
+        entrance.SetActive(true);
         //motor.motorSpeed = handSpeed;
         //handsUp.motor = motor;
     }
@@ -27,6 +29,7 @@ public class Hand : MonoBehaviour
         {
             motor.motorSpeed = -10;
             handsUp.motor = motor;
+            entrance.SetActive(false);
         } 
         
         
@@ -34,6 +37,7 @@ public class Hand : MonoBehaviour
         {
             motor.motorSpeed = 5;
             handsUp.motor = motor;
+            entrance.SetActive(true);
         }
         
     }
