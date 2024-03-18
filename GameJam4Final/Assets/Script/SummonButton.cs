@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Player : MonoBehaviour
+public class SummonButton : MonoBehaviour
 {
 
-    public float force;
+    public Summon summon;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,15 +17,14 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Move();
         
     }
 
-    void Move()
+
+    public void onPressed()
     {
-        float x = Input.GetAxis("Horizontal");
-
-        transform.Translate((new Vector3(x, 0) * force) * (Time.deltaTime/3));
-
+        summon.pressGo = true;
     }
+
+
 }
